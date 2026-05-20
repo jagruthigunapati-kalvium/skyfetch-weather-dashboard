@@ -1,11 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>SkyFetch Weather Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
 <body>
 
     <div class="container">
-        <h1>☁️ SkyFetch</h1>
-        <p class="tagline">Live Weather Dashboard</p>
+
+        <h1>🌤 SkyFetch</h1>
+
+        <p class="tagline">
+            Get real-time weather updates instantly
+        </p>
 
         <!-- Search Section -->
         <div class="search-section">
+
             <input
                 type="text"
                 id="city-input"
@@ -15,17 +39,16 @@
             <button id="search-btn">
                 🔍 Search
             </button>
+
         </div>
 
         <!-- Weather Display -->
-        <div id="weather-display">
-            <div class="welcome-message">
-                Enter a city name to get started!
-            </div>
-        </div>
+        <div id="weather-display"></div>
+
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- JavaScript -->
     <script src="app.js"></script>
 
 </body>
+</html>
